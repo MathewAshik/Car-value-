@@ -2690,14 +2690,11 @@ elif page == "About the Project":
             "Evaluation results are loaded from "
             "models/model_metrics.joblib."
         )
-
-    else:
-        st.warning(
-            "Model evaluation results are not available. "
-            "Run your training script using "
-            "'python src/train_model.py' from the project root, "
-            "then refresh this page."
-        )
+else:
+    st.info(
+        "Model evaluation metrics are currently unavailable. "
+        "Price prediction and other app features remain available."
+    )
 
     st.divider()
 
